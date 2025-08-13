@@ -1,3 +1,218 @@
-<h1>Rafif Musyaffa Indarto</h1>
-<p>I'm a student at Universitas Negeri Semarang preparing for my first web programming class.</p>
-<p>This is the very first webpage I have ever built!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rafif Musyaffa Indarto — Portfolio</title>
+    <meta name="description" content="Portfolio of Rafif Musyaffa Indarto: projects, skills, and contact information.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0f14">
+    <meta property="og:title" content="Rafif Musyaffa Indarto — Portfolio">
+    <meta property="og:description" content="Projects, skills, and contact.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.jpg">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="images/profile.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="#top" class="brand" aria-label="Home">
+                <span class="brand-avatar">
+                    <img src="images/profile.jpg" alt="Portrait of Rafif Musyaffa Indarto" width="64" height="64"
+                        loading="eager" decoding="async">
+                </span>
+                <span class="brand-text">Rafif</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">🌙</button>
+        </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section class="hero" id="top">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>
+                        Hi, I'm <span class="accent">Rafif Musyaffa Indarto</span>
+                    </h1>
+                    <p class="subtitle">Computer Science student in Bekasi with a passion for problem solving, clean
+                        code, and building useful tools for the web.</p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="#projects">See Projects</a>
+                        <a class="btn" href="#contact">Contact</a>
+                        <a class="btn ghost" href="https://github.com/rafifind" target="_blank"
+                            rel="noopener">GitHub</a>
+                    </div>
+                </div>
+                <picture class="hero-photo">
+                    <img src="images/profile.jpg" width="240" height="240" alt="Rafif smiling" loading="lazy"
+                        decoding="async">
+                </picture>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="grid projects-grid">
+                    <article class="card project">
+                        <div class="card-body">
+                            <h3 class="card-title">CLAHE Enhancer</h3>
+                            <p class="card-text">A simple image enhancement app using Contrast Limited Adaptive
+                                Histogram Equalization. Built with Python and Streamlit.</p>
+                            <ul class="tags">
+                                <li>Python</li>
+                                <li>Image Processing</li>
+                                <li>Streamlit</li>
+                            </ul>
+                        </div>
+                        <div class="card-actions">
+                            <a class="btn small" href="https://github.com/rafifind/clahe-enhancer" target="_blank"
+                                rel="noopener">Source</a>
+                        </div>
+                    </article>
+                    <article class="card project">
+                        <div class="card-body">
+                            <h3 class="card-title">Competitive Programming Snippets</h3>
+                            <p class="card-text">A collection of C++ solutions and templates developed across contests
+                                and practice problems.</p>
+                            <ul class="tags">
+                                <li>C++</li>
+                                <li>Algorithms</li>
+                                <li>Data Structures</li>
+                            </ul>
+                        </div>
+                        <div class="card-actions">
+                            <a class="btn small" href="#" aria-disabled="true">Coming soon</a>
+                        </div>
+                    </article>
+                    <article class="card project">
+                        <div class="card-body">
+                            <h3 class="card-title">Portfolio v1</h3>
+                            <p class="card-text">This website. Designed for speed, accessibility, and clear
+                                storytelling.</p>
+                            <ul class="tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div class="card-actions">
+                            <a class="btn small" href="#top">View</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div>
+                        <h3>Languages</h3>
+                        <ul class="tags">
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Web</h3>
+                        <ul class="tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Learning JS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Strengths</h3>
+                        <ul class="tags">
+                            <li>Problem Solving</li>
+                            <li>Algorithms</li>
+                            <li>Clean Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <p>I'm a Computer Science student at Universitas Negeri Semarang with a background in competitive
+                    programming. I enjoy turning complex ideas into simple, reliable software and I'm currently growing
+                    my web development skills.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>If you'd like to collaborate or just say hello, feel free to reach out.</p>
+                <div class="cta-row">
+                    <a class="btn primary" href="mailto:rafif.m.indarto@gmail.com">Email Me</a>
+                    <a class="btn" href="https://github.com/rafifind" target="_blank" rel="noopener">GitHub</a>
+                    <a class="btn" href="#top">Back to top</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="y"></span> Rafif Musyaffa Indarto</p>
+            <div class="social">
+                <a href="https://github.com/rafifind" target="_blank" aria-label="GitHub" rel="noopener"
+                    class="icon-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                        fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.86 3.15 8.98 7.5 10.43.55.1.75-.24.75-.53v-1.86c-3.05.66-3.7-1.3-3.7-1.3-.5-1.27-1.22-1.6-1.22-1.6-.99-.68.08-.66.08-.66 1.1.08 1.68 1.14 1.68 1.14.97 1.66 2.55 1.18 3.17.9.1-.7.38-1.18.68-1.45-2.43-.28-4.98-1.22-4.98-5.43 0-1.2.43-2.18 1.14-2.95-.12-.28-.5-1.42.11-2.95 0 0 .95-.3 3.1 1.13.9-.25 1.87-.38 2.83-.38.96 0 1.93.13 2.83.38 2.15-1.43 3.1-1.13 3.1-1.13.6 1.53.23 2.67.11 2.95.72.77 1.14 1.75 1.14 2.95 0 4.22-2.55 5.14-4.99 5.42.39.34.73 1 .73 2.02v3c0 .29.2.64.75.53 4.35-1.45 7.5-5.57 7.5-10.43C23.1 5.33 18.27.5 12 .5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Year and theme init
+        const yearEl = document.getElementById('y');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        const toggle = document.getElementById('themeToggle');
+        const getPref = () => localStorage.getItem('theme');
+        const setPref = (v) => localStorage.setItem('theme', v);
+        const applyTheme = (v) => {
+            document.documentElement.dataset.theme = v;
+            if (toggle) toggle.setAttribute('aria-pressed', v === 'dark');
+        };
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        applyTheme(getPref() || (prefersDark ? 'dark' : 'light'));
+        if (toggle) toggle.addEventListener('click', () => {
+            const next = (document.documentElement.dataset.theme === 'dark') ? 'light' : 'dark';
+            applyTheme(next); setPref(next);
+        });
+
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.style.scrollBehavior = 'smooth';
+        }
+    </script>
+</body>
+
+</html>
