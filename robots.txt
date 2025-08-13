@@ -1,3 +1,4 @@
-# Allow all crawling
 User-agent: *
 Allow: /
+
+Sitemap: https://rafifind.github.io/my-portfolio-site/sitemap.xml
